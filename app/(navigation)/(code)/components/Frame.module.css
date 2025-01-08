@@ -646,8 +646,36 @@
 /* Linear Frame */
 
 .linearFrame {
+  position: relative;
   background-image: linear-gradient(168deg, #0e1010 0%, #080808 72%);
-  /* background-color: red; */
+
+  &::before {
+    position: absolute;
+    z-index: 0;
+    top: 10px;
+    left: -30px;
+    width: 160px;
+    height: 80px;
+    background-color: #fff;
+    content: "";
+    filter: blur(80px);
+    opacity: 8%;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    position: absolute;
+    z-index: 0;
+    top: 10px;
+    left: -30px;
+    width: 160px;
+    height: 40px;
+    background-color: #fff;
+    content: "";
+    filter: blur(80px);
+    opacity: 12%;
+    transform: rotate(45deg);
+  }
 }
 
 .linearWindow {
