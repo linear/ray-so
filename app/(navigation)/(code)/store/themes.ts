@@ -313,8 +313,8 @@ export const THEMES: { [index: string]: Theme } = {
     id: "linear",
     name: "Linear",
     background: {
-      from: "#0E1010",
-      to: "#080808",
+      from: "#f00",
+      to: "#f00",
     },
     icon: LinearLogo,
     iconUrl: `${BASE_URL}${LinearLogoUrl.src}`,

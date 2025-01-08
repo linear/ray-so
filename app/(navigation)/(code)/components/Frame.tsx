@@ -287,7 +287,9 @@ const LinearFrame = () => {
           </div>
           <span className={styles.linearLanguage}>{selectedLanguage?.name}</span>
         </div>
-        <Editor />
+        <div className={styles.linearEditor}>
+          <Editor />
+        </div>
       </div>
     </div>
   );
