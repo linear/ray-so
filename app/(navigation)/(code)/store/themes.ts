@@ -13,6 +13,8 @@ import TailwindLogo from "../assets/tailwind.svg";
 import TailwindLogoUrl from "../assets/tailwind.svg?url";
 import OpenAiLogo from "../assets/openai.svg";
 import OpenAiLogoUrl from "../assets/openai.svg?url";
+import LinearLogo from "../assets/linear.svg";
+import LinearLogoUrl from "../assets/linear.svg?url";
 import ClerkLogo from "../assets/clerk.svg";
 import ClerkLogoUrl from "../assets/clerk.svg?url";
 import PrismaLogo from "../assets/prisma.svg";
@@ -304,6 +306,53 @@ export const THEMES: { [index: string]: Theme } = {
         property: "#F22C3D",
         highlight: "rgba(255, 255, 255, 0.05)",
         highlightHover: "rgba(255, 255, 255, 0.03)",
+      }),
+    },
+  },
+  linear: {
+    id: "linear",
+    name: "Linear",
+    background: {
+      from: "#0E1010",
+      to: "#080808",
+    },
+    icon: LinearLogo,
+    iconUrl: `${BASE_URL}${LinearLogoUrl.src}`,
+    font: "soehne-mono",
+    partner: true,
+    hidden: false,
+    lineNumbers: true,
+    syntax: {
+      light: convertToShikiTheme({
+        foreground: "#ff0000",
+        constant: "#666666",
+        parameter: "#666666",
+        stringExpression: "#666666",
+        keyword: "#666666",
+        function: "#111111",
+        punctuation: "#666666",
+        string: "#666666",
+        comment: "#999999",
+        link: "#666666",
+        number: "#111111",
+        property: "#666666",
+      }),
+      dark: convertToShikiTheme({
+        foreground: "#949698",
+        constant: "#6C76E4",
+        parameter: "#fff",
+        stringExpression: "#FC7840",
+        keyword: "#fff",
+        function: "#E2E4E6",
+        punctuation: "#949698",
+        string: "#FC7840",
+        comment: "#fff",
+        link: "#fff",
+        number: "#EB5757",
+        property: "#939CDA",
+        highlight: "#171829",
+        highlightHover: "#12131E",
+        highlightBorder: "#6C76E4",
       }),
     },
   },

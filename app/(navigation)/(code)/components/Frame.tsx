@@ -254,6 +254,45 @@ const OpenAIFrame = () => {
   );
 };
 
+const LinearFrame = () => {
+  const [darkMode] = useAtom(darkModeAtom);
+  const [padding] = useAtom(paddingAtom);
+  const [showBackground] = useAtom(showBackgroundAtom);
+  const [fileName, setFileName] = useAtom(fileNameAtom);
+  const [selectedLanguage, setSelectedLanguage] = useAtom(selectedLanguageAtom);
+
+  return (
+    <div
+      className={classNames(
+        styles.frame,
+        showBackground && styles.linearFrame,
+        !darkMode && styles.linearFrameLightMode,
+        !showBackground && styles.noBackground,
+      )}
+      style={{ padding }}
+    >
+      {!showBackground && <div data-ignore-in-export className={styles.transparentPattern}></div>}
+      <div className={styles.linearWindow}>
+        <div className={styles.linearHeader}>
+          <div className={classNames(styles.fileName, styles.linearFileName)} data-value={fileName}>
+            <input
+              type="text"
+              value={fileName}
+              onChange={(event) => setFileName(event.target.value)}
+              spellCheck={false}
+              tabIndex={-1}
+              size={1}
+            />
+            {fileName.length === 0 ? <span>New file</span> : null}
+          </div>
+          <span className={styles.linearLanguage}>{selectedLanguage?.name}</span>
+        </div>
+        <Editor />
+      </div>
+    </div>
+  );
+};
+
 const DefaultFrame = () => {
   const [padding] = useAtom(paddingAtom);
   const isSafari = useIsSafari();
@@ -323,6 +362,8 @@ const Frame = ({ resize = true }: { resize?: boolean }) => {
         return <MintlifyFrame />;
       case THEMES.openai.id:
         return <OpenAIFrame />;
+      case THEMES.linear.id:
+        return <LinearFrame />;
       case THEMES.prisma.id:
         return <PrismaFrame />;
       default:
