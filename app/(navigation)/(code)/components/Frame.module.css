@@ -780,24 +780,37 @@
 }
 
 .linearFrameLightMode {
-  background: #fcfcfc;
+  background: #ededed;
 
-  .linearWindow {
-    border-color: #dfdfdf;
-    background: #ffffff;
+  /* Rays */
+  &:before {
+    background-color: #fff;
+    opacity: 8%;
   }
 
-  .linearHeader {
-    border-color: #dfdfdf;
-    background: #fcfcfc;
+  &:after {
+    background-color: #fff;
+    opacity: 12%;
+  }
+
+  .linearWindow {
+    background: #ededed;
   }
 
   .linearFileName {
-    color: #171717;
+    color: #e2e4e6;
   }
 
   .linearLanguage {
-    color: #707070;
+    color: #949698;
+  }
+
+  .linearEditor {
+    background-color: #fbfbfb;
+
+    &:after {
+      border: 1px solid #dcdcdc;
+    }
   }
 }
 
