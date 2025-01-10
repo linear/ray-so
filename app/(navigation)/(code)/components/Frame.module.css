@@ -649,7 +649,8 @@
   position: relative;
   background-image: linear-gradient(168deg, #0e1010 0%, #080808 72%);
 
-  &::before {
+  /* Rays */
+  &:before {
     position: absolute;
     z-index: 0;
     top: 10px;
@@ -663,7 +664,7 @@
     transform: rotate(45deg);
   }
 
-  &::after {
+  &:after {
     position: absolute;
     z-index: 0;
     top: 10px;
@@ -756,9 +757,26 @@
 }
 
 .linearEditor {
-  border: 0.5px solid #22262a;
+  position: relative;
+  /* border: 0.5px solid #22262a; */
+  /* border: 0.5px solid red; */
   border-radius: 4px;
   background-color: #0e1010;
+
+  &:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #22262a;
+    border-radius: 4px;
+    content: "";
+    /* mask border */
+    mask-image: radial-gradient(circle at top left, black 80px, transparent 160px);
+    pointer-events: none;
+    /* background-image: linear-gradient(156deg, red 0%, transparent 50%); */
+  }
 }
 
 .linearFrameLightMode {
