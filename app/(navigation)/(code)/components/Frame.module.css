@@ -685,7 +685,6 @@
   display: flex;
   flex-direction: column;
   padding: 4px;
-  /* border: 1px solid red; */
   border-radius: 10px;
   background: #080808;
   gap: 4px;
@@ -758,8 +757,6 @@
 
 .linearEditor {
   position: relative;
-  /* border: 0.5px solid #22262a; */
-  /* border: 0.5px solid red; */
   border-radius: 4px;
   background-color: #0e1010;
 
@@ -772,10 +769,8 @@
     border: 1px solid #22262a;
     border-radius: 4px;
     content: "";
-    /* mask border */
     mask-image: radial-gradient(circle at top left, black 80px, transparent 160px);
     pointer-events: none;
-    /* background-image: linear-gradient(156deg, red 0%, transparent 50%); */
   }
 }
 
@@ -794,7 +789,7 @@
   }
 
   .linearWindow {
-    background: #ededed;
+    background: #ebebeb;
   }
 
   .linearFileName {
@@ -806,7 +801,7 @@
   }
 
   .linearEditor {
-    background-color: #fbfbfb;
+    background-color: #ededed;
 
     &:after {
       border: 1px solid #dcdcdc;
