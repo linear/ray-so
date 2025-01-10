@@ -687,6 +687,10 @@
   padding: 4px;
   border-radius: 10px;
   background: #080808;
+  box-shadow:
+    0px 1px 2px 0px rgba(0, 0, 0, 0.04),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.06),
+    0px 4px 8px 0px rgba(0, 0, 0, 0.08);
   gap: 4px;
 }
 
@@ -696,7 +700,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 2px 16px 0;
-  /* border-bottom: 1px solid #292929; */
   background: transparent;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -790,6 +793,10 @@
 
   .linearWindow {
     background: #fff;
+    box-shadow:
+      0px 1px 2px 0px rgba(0, 0, 0, 0.01),
+      0px 2px 4px 0px rgba(0, 0, 0, 0.02),
+      0px 4px 8px 0px rgba(0, 0, 0, 0.04);
   }
 
   .linearFileName {
