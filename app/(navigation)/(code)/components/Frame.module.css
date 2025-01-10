@@ -811,7 +811,7 @@
     background-color: #fbfbfb;
 
     &:after {
-      border: 0.5px solid #dcdcdc;
+      border: 0.5px solid #e7e7e7;
     }
   }
 }
