@@ -775,7 +775,7 @@
 }
 
 .linearFrameLightMode {
-  background: #ededed;
+  background: #ececec;
 
   /* Rays */
   &:before {
@@ -789,19 +789,19 @@
   }
 
   .linearWindow {
-    background: #ebebeb;
+    background: #fff;
   }
 
   .linearFileName {
-    color: #e2e4e6;
+    color: #1b1b1b;
   }
 
   .linearLanguage {
-    color: #949698;
+    color: #5c5c5e;
   }
 
   .linearEditor {
-    background-color: #ededed;
+    background-color: #fbfbfb;
 
     &:after {
       border: 1px solid #dcdcdc;
