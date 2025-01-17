@@ -731,6 +731,7 @@
     background: none;
     caret-color: #6571ca;
     font: inherit;
+    font-family: var(--font-berkeley-mono);
     grid-area: 1 / 2;
     resize: none;
     text-align: left;
