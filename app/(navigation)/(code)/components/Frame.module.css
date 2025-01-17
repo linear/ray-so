@@ -729,6 +729,7 @@
     margin: 0;
     appearance: none;
     background: none;
+    caret-color: #6571ca;
     font: inherit;
     grid-area: 1 / 2;
     resize: none;
