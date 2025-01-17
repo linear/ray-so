@@ -318,7 +318,7 @@ export const THEMES: { [index: string]: Theme } = {
     },
     icon: LinearLogo,
     iconUrl: `${BASE_URL}${LinearLogoUrl.src}`,
-    font: "soehne-mono",
+    font: "berkeley-mono",
     partner: true,
     hidden: false,
     lineNumbers: true,

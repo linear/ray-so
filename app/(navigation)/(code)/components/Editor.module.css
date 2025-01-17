@@ -158,3 +158,8 @@
   font-family: var(--font-soehne-mono), "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", monospace;
   font-weight: 400;
 }
+
+.berkeleyMono {
+  font-family: var(--font-berkeley-mono), "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", monospace;
+  font-weight: 400;
+}

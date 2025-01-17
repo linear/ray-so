@@ -648,6 +648,7 @@
 .linearFrame {
   position: relative;
   background-image: linear-gradient(168deg, #0e1010 0%, #080808 72%);
+  font-family: var(--font-berkeley-mono);
 
   /* Rays */
   &:before {
@@ -712,7 +713,6 @@
   height: 24px;
   align-items: center;
   color: #e2e4e6;
-  font-family: "soehne-mono", monospace;
   font-size: 12px;
   line-height: 24px;
   vertical-align: top;
@@ -753,7 +753,6 @@
 .linearLanguage {
   height: 24px;
   color: #949698;
-  font-family: "soehne-mono", monospace;
   font-size: 12px;
   line-height: 24px;
 }
